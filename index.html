@@ -328,6 +328,13 @@
 		$.getScript('//apis.google.com/js/client.js?onload=handleClientLoad');
 		pushEventTable();
     });
+    
+    //Load
+    window.onload=function(){
+      if(document.getElementById('test')!=null||document.getElementById('test')!=""){ 
+      document.getElementById('test').click();
+      }
+    }
 
 </script>
     
