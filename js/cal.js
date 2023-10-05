@@ -2,7 +2,7 @@
         var clientId = '12194993959-6g2bhmap43eg9fh139tp3uhst1f1dr5d.apps.googleusercontent.com';       
         var apiKey = 'AIzaSyCtqxakDrV9RCqX-IJ-pQfsAdukEJE7d94';
         var scopes = 'https://www.googleapis.com/auth/calendar';
-        var numAfter = 5;
+        var numAfter = 2;
         var numBefore = 2;
         var numIncrement = 4;
         var oldtable = false;
