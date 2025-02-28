@@ -312,6 +312,10 @@ strong {
     background-color: rgb(186, 0, 223);
 }
 
+.polisci {
+    background-color: rgb(51, 12, 114);
+}
+
 .algs {
     background-color: rgb(6, 129, 129);
 }
@@ -322,6 +326,10 @@ strong {
 
 .bu {
     background-color: rgb(191, 9, 30);
+}
+
+.bc {
+    background-color: rgb(196, 175, 110);
 }
 
 .mit {
