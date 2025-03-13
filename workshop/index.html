@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    
+<!--HEAD-->
+<head>
+
+    <title>Boston Economics and Computing Hub</title>
+    
+    <!--open links in new tab-->
+    <!-- <base target="_blank"> -->
+
+    <!--JS-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>	
+    <script src="js/cal.js"></script>	
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="../bootstrap.min.css">	
+    <link rel="stylesheet" href="../style.css"> 
+    
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web|Roboto+Slab&display=swap" rel="stylesheet">
+    
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:image" content="images/og-image.png">
+</head>
+
+<!--BODY-->
+<body>
+    
+    
+
+<div id="lr-container">
+    <div id="left">
+    
+    <h1 class="title">BEACH Days: Boston Economics and Computing Hub Workshops</h1>
+        
+        <div id="welcome-blurb">
+		
+		<p> Part of the goal of BEACH is to bring together researchers working in Economics and Computing in the Boston area across disciplines and institutions together.  To this end, we hold semesterly workshops called "BEACH Day"s on focused topics in Economics and Computing.  See previous and future workshops below.  Return <a href="../">home</a> for more details about our calendar, mailing list, researchers, and other resources. <br/><br/></p>
+
+
+        </div>
+        
+        
+        <h2>Upcoming BEACH Day: April 4, 2025</h2>
+        
+        
+            
+            <p><br/>Join us for our first BEACH Day this April 4!  Our topic will be <b>Behavioral Models in EconCS</b> at Boston University, organized by <a href="https://www.kiragoldner.com/" target="_blank">Kira Goldner</a> and <a href="https://www.divyarthimohan.com/" target="_blank">Divyarthi Mohan</a>.  The schedule will include two hour-long bootcamp-style talks and six half-hour talks on recent work.  Breakfast and lunch will be served.  Registration is free but required.  Please register <strong>as soon as possible</strong> at <a href="https://forms.gle/ZkB3qVMqQYjAi21m8" target="_blank">this link</a>, but no later than <strong>March 28</strong>.  (If this deadline is a limiting factor, please contact the organizers.)  The tentative schedule follows:
+            
+            <center><table class="rg" style="width:855px;">
+     <tr><th style="width: 175px;">Time</th> <th style="width: 400px;">Event</th> <th style="width: 300px;">Speaker</th> </tr>
+     <tr class="module"> <td>9:30-10:30</td> <td><b>Bootcamp:</b> TBD</td> <td>Manish Raghavan</td> </tr>
+     <tr> <td>10:30-11:00</td> <td>Talk TBD</td> <td>Kate Donahue</td></tr>
+        <tr class="break"> <td>11:00-11:30</td> <td>Break</td> <td></td></tr>
+     <tr> <td>11:30-12:00</td> <td>Talk TBD</td> <td></td></tr>
+     <tr> <td>12:00-12:30</td> <td>Talk TBD</td> <td></td></tr>       
+        <tr class="break"> <td>12:30-1:30</td> <td>Lunch</td> <td></td></tr>
+     <tr> <td>1:30-2:30</td> <td><b>Bootcamp:</b> TBD</td> <td>Shengwu Li</td> </tr>
+     <tr> <td>2:30-3:00</td> <td>Talk TBD</td> <td></td></tr>
+        <tr class="break"> <td>3:00-3:30</td> <td>Break</td> <td></td></tr>
+     <tr> <td>3:30-4:00</td> <td>Talk TBD</td> <td></td></tr>
+     <tr> <td>4:00-4:30</td> <td>Talk TBD</td> <td></td></tr>    
+         </table></center><br/>
+    
+    </p>
+            
+            
+      </div>  
+        
+    </div></div>
+    
+    <div id="mid"></div>   
+
+    <div id="right">
+        
+        <br/>
+        
+        
+        <h2>Previous BEACH Days</h2>
+            <ul>
+                <li>None yet!</li>
+            </ul>
+      </div>      
+
+
+</div>    
+    
+</body>
+    
+<script>
+    function openTab(evt, tabName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="default" and click on it
+    document.getElementById("default").click();
+    
+    // Calendar
+    $(document).ready(function() {
+		$.getScript('//apis.google.com/js/client.js?onload=handleClientLoad');
+		pushEventTable();
+    });
+    
+    //Load
+    window.onload=function(){
+      if(document.getElementById('laterEvents')!=null||document.getElementById('laterEvents')!=""){ 
+      document.getElementById('laterEvents').click();
+      }
+    }
+
+</script>
+    
+</html>

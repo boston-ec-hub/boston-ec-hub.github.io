@@ -372,3 +372,32 @@ strong {
     width: 100%;
     margin-top: -3px;
 }    
+
+
+table ol {
+    margin: 0%;
+    margin-left: -1.3em;
+}
+
+.rg {
+    border-collapse: collapse;
+    text-align:left;
+    vertical-align: top;
+    width: 87%;
+}
+
+.rg table, .rg th, .rg td{
+    /*border: 1px solid black;*/
+    border-bottom: 1px solid #CCCCCC;
+    border-collapse: collapse;
+    vertical-align: top;
+    padding: 5px 10px;
+}
+
+.break {
+    color: #B4B4B4;
+}
+
+.module tr, .module td{
+    border-top: 4px double black;
+}
