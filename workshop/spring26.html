@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    
+<!--HEAD-->
+<head>
+
+    <title>Boston Economics and Computing Hub</title>
+    
+    <!--open links in new tab-->
+    <!-- <base target="_blank"> -->
+
+    <!--JS-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>	
+    <script src="js/cal.js"></script>	
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="../bootstrap.min.css">	
+    <link rel="stylesheet" href="../style.css"> 
+    
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web|Roboto+Slab&display=swap" rel="stylesheet">
+    
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:image" content="../images/og-image.png">
+</head>
+
+<!--BODY-->
+<body>
+    
+    
+
+<div id="lr-container">
+    <div id="left">
+    
+    <h1 class="title">BEACH Days: Boston Economics and Computing Hub Workshops</h1>
+        
+        <p>Part of the goal of BEACH is to bring together researchers working in Economics and Computing in the Boston area across disciplines and institutions together.  To this end, we hold semesterly workshops called "BEACH Day"s on focused topics in Economics and Computing.  Return <a href="../">home</a> for more details about our calendar, mailing list, researchers, and other resources.  <br/><br/></p>
+
+        <h2>Spring 2026 BEACH Day: April 10, 2026</h2>
+        
+            
+            <p><br/>Join us for our third BEACH Day this April 10!  Our topic will be <b>Strategic Communication and Information Design</b> at Boston College, organized by <a href="https://papireddygari.github.io" target="_blank">Maneesha Papireddygari</a>, <a href="https://www.gilirusak.com" target="_blank">Gili Rusak</a>, <a href="https://www.fmarmolejo.com" target="_blank">Francisco Marmolejo-Cossio</a>, and <a href="https://www.jessiefin.com/" target="_blank">Jessie Finocchiaro</a>.  The schedule will include a mixture of hour-long bootcamp-style talks and shorter half-hour talks on recent work.  Breakfast and lunch will be served.  <br/><br/>
+            
+                          <strong>Location:</strong> The workshop will take place in the Schiller Convening Space (Room 501) at 245 Beacon St Chestnut Hill, MA 02467 <br/><br/>
+
+            
+            <strong>Registration is free but required.</strong>  To ensure we have appropriate space and food, please register <b>as soon as possible</b> at <a href="https://forms.gle/uNQy9Q6gHqSuLrQcA" target="_blank">this link</a>, but no later than <strong>April 2</strong>.  (If this deadline is a limiting factor, please contact the organizers.)<br/><br/>
+          
+        <strong>Schedule:</strong> To be announced <br/><br/>
+         
+         <strong>Getting Here:</strong> <b>Driving:</b> We have limited parking validations available, but encourage carpooling if you do drive. Park in the <a href = "https://maps.app.goo.gl/cH6siviyYyUE2bYc6" target="_blank">garage under Alumni Stadium</a> and hold onto your parking ticket. Park in areas marked <b>G</b>.  <b>Taking the T:</b> the green line: B line will take you to Boston College (+10 minute walk to the building), C line will take you to Cleveland Circle (+20 minute walk to the building), D line to Reservoir (+ 20 minute walk to building). <b>Taking the bus:</b> if coming from Central/Allston: the 86 bus will get you about a 15 minute walk away from the building. <br/><br/>
+
+    
+    </p>
+            
+            
+      </div>  
+        
+    </div></div>
+    
+    <div id="mid"></div>   
+
+    <div id="right">
+        
+        <br/>
+
+
+
+</div>    
+    
+</body>
+    
+<script>
+    function openTab(evt, tabName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="default" and click on it
+    document.getElementById("default").click();
+    
+    // Calendar
+    $(document).ready(function() {
+		$.getScript('//apis.google.com/js/client.js?onload=handleClientLoad');
+		pushEventTable();
+    });
+    
+    //Load
+    window.onload=function(){
+      if(document.getElementById('laterEvents')!=null||document.getElementById('laterEvents')!=""){ 
+      document.getElementById('laterEvents').click();
+      }
+    }
+
+</script>
+    
+</html>
